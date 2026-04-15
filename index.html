@@ -68,6 +68,27 @@ h1 {
     opacity: 0.8;
     margin-bottom: 20px;
 }
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.footer-btn {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.2s ease;
+}
+
+.footer-btn:hover {
+    background: rgba(255,255,255,0.2);
+}
 </style>
 </head>
 
@@ -119,7 +140,10 @@ h1 {
     </div>
 	
 	<div class="footer">
-	    <a href="support.html">Support</a>
+	    <div class="footer-buttons">
+	        <a href="support.html" class="footer-btn">Support</a>
+	        <a href="privacy.html" class="footer-btn">Privacy</a>
+	    </div>
 	</div>
 
 </div>
